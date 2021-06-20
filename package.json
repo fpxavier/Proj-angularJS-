@@ -1,0 +1,22 @@
+{
+  "name": "curso-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.5.0",
+    "angular": "^1.6.0",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^4.4.1",
+    "i": "^0.3.6",
+    "ng": "*",
+    "node": "^16.0.0",
+    "server": "^1.0.32"
+  }
+}

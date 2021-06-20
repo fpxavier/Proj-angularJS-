@@ -1,0 +1,33 @@
+
+<h1>{{vm.teste}}</h1>
+
+<div class="container">
+    <form>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" ng-model= "vm.paciente.nome" placeholder="Nome do paciente">
+        </div>
+        <div class="form-group">
+          <label for="rg">RG</label>
+          <input type="text" class="form-control" id="rg" ng-model= "vm.paciente.rg" placeholder="Rg do paciente">
+        </div>
+          <div class="form-group">
+            <label for="sexo">Sexo</label>
+            <input type="text" class="form-control" id="sexo" ng-model= "vm.paciente.sexo" placeholder="Sexo do paciente">
+        </div>
+        <div class="form-group">
+          <label for="dataNasc">Data Nascimento</label>
+          <input type="text" class="form-control" id="dataNasc" ng-model= "vm.paciente.dataNasc" placeholder="Data de nascimento do paciente">
+        </div>
+        <div class="form-group">
+          <label for="sus">SUS</label>
+          <input type="text" class="form-control" id="sus" ng-model= "vm.paciente.sus" placeholder="Número carteirinha do SUS do paciente">
+          
+         
+   </form>
+   <button type="button" class="btn btn-success" ng-click="vm.cadastrar()">{{vm.textoBotao}}</button>
+
+   <button type="button" class="btn btn-warning" ng-click="vm.limpar()">Limpar</button>
+  
+
+</div> 

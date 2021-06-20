@@ -1,0 +1,44 @@
+{
+  "pacientes": [
+    {
+      "id": 1,
+      "nome": "Fabiana",
+      "rg": "123456",
+      "sexo": "F",
+      "dataNasc": "25/12/1981",
+      "sus": "9999"
+    },
+    {
+      "id": 2,
+      "nome": "Leonardo",
+      "rg": "987654",
+      "sexo": "M",
+      "dataNasc": "28/03/1986",
+      "sus": "8888"
+    },
+    {
+      "id": 3,
+      "nome": "Heloisa",
+      "rg": "345678",
+      "sexo": "F",
+      "dataNasc": "27/05/2015",
+      "sus": "7777"
+    },
+    {
+      "id": 4,
+      "nome": "Julia",
+      "rg": "13579",
+      "sexo": "F",
+      "dataNasc": "05/05/2020",
+      "sus": "6666"
+    },
+    {
+      "nome": "Cliente Teste",
+      "id": 5
+    },
+    {
+      "nome": "LEONARDO CUSTODIO DE OLIVEIRA",
+      "id": 9
+    }
+  ]
+}

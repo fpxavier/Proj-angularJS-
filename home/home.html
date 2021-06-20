@@ -1,0 +1,35 @@
+<div class="container" ng-init="vm.listarPacientes()" >
+
+    <div class="alert alert-danger" role="alert" ng-if="vm.erro">
+      Conexão com o Banco de Dados falhou!
+    </div>
+    <input class="form-control" type="text" placeholder="pesquisar" aria-label="default input example">
+<input class="form-control form-control-sm" ng-mode="vm.filtroPesquisa" type="text" placeholder="" aria-label=".form-control-sm example">
+    <table class="table" ng-if="vm.pacientes">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">RG</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Data Nascimento</th>
+            <th scope="col">SUS</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="pac in vm.pacientes |filter: vm.filtroPesquisa"> 
+            <th scope="row">{{pac.id}}</th>
+            <td>{{pac.nome}}</td>
+            <td>{{pac.rg}}</td>
+            <td>{{pac.sexo}}</td>
+            <td>{{pac.dataNasc}}</td>
+            <td>{{pac.sus}}</td> 
+            <td><button type="button" class="btn btn-warning"ng-click="vm.editar(pac.id)">Editar</button></td>
+            <td><button type="button" class="btn btn-danger"ng-click="vm.excluir(pac.id)">Excluir</button></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>  
