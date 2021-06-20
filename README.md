@@ -1,1 +1,1 @@
-# Proj-angularTS
+# Proj-angularJS
